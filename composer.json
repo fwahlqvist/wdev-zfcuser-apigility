@@ -1,0 +1,29 @@
+{
+    "name": "fwahlqvist/wdev-zfcuser-apigility",
+    "description": "A ZF2 module to enable Apigility (with Mongo) and ZfcUser",
+    "keywords": [
+        "fwahlqvist",
+        "zf2",
+        "Apigility",
+        "Doctrine"
+    ],
+    "authors": [
+        {
+            "name": "Fredrik Wahlqvist",
+            "email": "fwahlqvist@gmail.com",
+            "homepage": "http://www.wahlqvist.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "WdevZfcuserApigility": "src/"
+        },
+        "classmap": [
+            "./"
+        ]
+    }
+}
