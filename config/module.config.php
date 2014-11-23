@@ -13,6 +13,20 @@ return array(
             'jwt_table' => 'oauth_jwt',
         ),
     ),
+    'doctrine' => array(
+        'driver' => array(
+            'zfcuser_document' => array(
+                'class' => 'Doctrine\ODM\MongoDB\Mapping\Driver\XmlDriver',
+                'paths' => __DIR__ . '/xml'
+            ),
+
+            'odm_default' => array(
+                'drivers' => array(
+                    'WdevZfcuserApigility\Document'  => 'zfcuser_document'
+                )
+            )
+        )
+    ),
     'zfcuser' => array(
         'enable_username' => true,
         'enable_display_name' => false, //Enable Display Name
